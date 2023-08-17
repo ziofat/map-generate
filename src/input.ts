@@ -25,8 +25,8 @@ export function setupInput() {
     </div>
   `;
 
-  document.getElementById(
-    'data'
+  document.querySelector<HTMLTextAreaElement>(
+    '#data'
   )!.value = `ZKAB2\t114.1987288\t22.61200036\t0.08
     `;
 
@@ -37,7 +37,8 @@ export function setupInput() {
 
 function update() {
   const data: DataNode[] = [];
-  const raw = document.getElementById('data')!.value as string;
+  const raw = document.querySelector<HTMLTextAreaElement>('#data')!
+    .value as string;
   const preview = raw
     .split('\n')
     .map((line) => {
