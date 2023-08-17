@@ -1,0 +1,33 @@
+#input-container {
+  display: flex;
+  padding: 12px 0;
+  justify-content: space-between;
+}
+
+#paste {
+  flex-basis: 40%;
+  height: 30vh;
+  position: relative;
+}
+
+#preview {
+  flex-basis: 60%;
+  overflow: auto;
+}
+
+#paste > textarea {
+  width: 100%;
+  height: calc(30vh - 50px);
+  margin-top: 12px;
+  resize: none;
+}
+
+#paste > button {
+  position: absolute;
+  right: 12px;
+  bottom: 24px;
+}
+
+#preview > table {
+  width: 100%;
+}
