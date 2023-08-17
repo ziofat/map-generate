@@ -27,7 +27,7 @@ export function setupInput() {
 
   document.querySelector<HTMLTextAreaElement>(
     '#data'
-  )!.value = `ZKAB2\t114.1987288\t22.61200036\t0.08
+  )!.value = `ZKAB2\t114.19450164\t22.61458530\t0.08
     `;
 
   document
